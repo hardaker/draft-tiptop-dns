@@ -75,6 +75,7 @@
         <t>If all needed DNSSEC material is not fully uploaded, then DNSSEC validation will fail, also resulting in a SERVFAIL error.</t>
         <t>A method for syncing and updating all the updated records to the isolated network should be put in place, at the appropriate frequency. Typical DNS zone tranfer mechanisms (AXFR and IXFR) may not be suitable because TCP transport is likely not possible in deep space. In this case, other file transfer mechanisms may be used.</t>
         <t>Some DNS records have values containing other names, such as the SRV and CNAME records. The referenced names should also be included with the data to be fetched and cached by the pre-fetching recursive resolvers.</t>
+        <t>Recursive resolvers that do not implement pre-fetching of required DNS data need to be configured as forwarding resolvers that forward requests to a recursive resolver that does.</t>
       </section>
       <section>
         <name>Pre-fetch of critical zones in the needed name hierarchy</name>
