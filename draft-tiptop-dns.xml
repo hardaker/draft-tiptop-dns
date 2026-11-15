@@ -115,7 +115,7 @@
     </section>
     <section>
         <name>ZoneMD Considerations</name>
-        <t>When glue records are changed in a zone, the ZoneMD <xref target="RFC8976"/> digest is invalidated. Therefore, target network authoritative servers importing the zone should disable the ZoneMD check or the ZONEMD record should be removed prior to import.</t>
+        <t>Recursive resolvers that use pre-fetching of data to make use of locally cached DNS data, such as with the DNS root, must ensure that the ZONEMD record When glue records are changed in a zone, the ZoneMD <xref target="RFC8976"/> is checked within the zone data before using the contents of the retrieved zone.</t>
     </section>
     <section>
       <name>Network Operations Considerations</name>
