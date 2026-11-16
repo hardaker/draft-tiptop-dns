@@ -44,7 +44,7 @@
           <t>Given all the investment in technology, protocol, services, infrastructure, scrutiny and governance in place, the ability to use the current Internet DNS Root with DNSSEC<xref target="RFC9364"/> in deep space has a lot of merit compared to using a split DNS tree with an alternate DNS root and trust chain. In order to achieve this goal, the necessary domain data required for full DNS resolution, including the necessary related DNSSEC keys, must be locally available for validation and use.</t>
             <t>The requirements of this document use case are:</t>
             <ul>
-              <li>ability to do real-time DNS queries using local infrastructure.</li>
+              <li>given the inability to do real-time DNS queries to the Internet DNS infrastructure from space, ability to do real-time DNS queries using local infrastructure.</li>
               <li>domains used in deep space are under the Internet's unique DNS root<xref target="RFC2826"/>, deployed under agreed community requirements<xref target="RFC7720"/></li>
               <li>ability to sometimes reach the celestial body network name servers from Earth Internet in order to update local caches of DNS data.</li>
               <li>multiple network and DNS operators may exist on the celestial body network, each managing their own namespace and/or caches</li>
